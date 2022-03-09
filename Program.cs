@@ -56,7 +56,7 @@ namespace ConsoleApp1
             {
                 ci[5, i] = ci[5, i + 1] + a[5, i];
             }
-            //Вынужденный нижний
+            //Вынужденный левый
             for (int i = 4; i >= 0; i--)
             {
                 ci[i, 0] = ci[i + 1, 0] + b[5, i];
@@ -68,7 +68,7 @@ namespace ConsoleApp1
             {
                 for (int j = 0; j < 6; j++)
                 {
-                    Console.Write("{0, 5}", ci[i, j]);
+                    Console.Write("{0, 10}", ci[i, j]);
                 }
                 Console.WriteLine();
             }
